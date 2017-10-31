@@ -1,0 +1,203 @@
+/*
+ Copyright (c) 2017 FH Dortmund.
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ which accompanies this distribution, and is available at
+ http://www.eclipse.org/legal/epl-v10.html
+
+ Description:
+    rover-web | Main stylesheet for roverweb
+
+ Author:
+    M. Ozcelikors <mozcelikors@gmail.com>
+*/
+
+body{
+	height:100%;
+	font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;
+	margin:0;
+	padding:0;
+	border:0;
+	background: url('../images/bsg.jpg') no-repeat center center fixed; /*silinecek*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#icerik {
+	width:1020px;
+	font-family:Tahoma; 
+	font-size:12px; 
+	color:#FFF; 
+	background-image: url('../images/bst.png');
+	padding:10px;
+	-moz-border-radius:16px;
+	-webkit-border-radius:16px;
+	border-radius:16px;
+	margin:10px auto;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.bilgiTable {
+	-moz-border-radius:16px;
+	-webkit-border-radius:16px;
+	border-radius:16px;
+	background-color:#666666;	
+}
+#sensorSection2Div
+{
+	
+}
+.mozTable {
+	-moz-border-radius:16px;
+	-webkit-border-radius:16px;
+	border-radius:16px;
+	background-color:#EAEAEA;
+	border:2px #CCC solid;
+	position: absolute;
+	right: 0; top:30%;
+	width: 240px;
+	height: 300px;
+}
+
+.buton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #a6a6a6;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #a6a6a6;
+	box-shadow:inset 0px 1px 0px 0px #a6a6a6;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #bababa), color-stop(1, #9e9e9e) );
+	background:-moz-linear-gradient( center top, #bababa 5%, #9e9e9e 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bababa', endColorstr='#9e9e9e');
+	background-color:#bababa;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #adadad;
+	display:inline-block;
+	color:#fafafa;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #808080;
+	border:1px solid #CCCCCC;
+	margin:2px;
+	cursor:pointer;
+}.buton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #9e9e9e), color-stop(1, #bababa) );
+	background:-moz-linear-gradient( center top, #9e9e9e 5%, #bababa 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9e9e9e', endColorstr='#bababa');
+	background-color:#9e9e9e;
+}.buton:active {
+	position:relative;
+	top:1px;
+}
+.buton1 {	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+	cursor:pointer;
+	border:1px solid #CCCCCC;
+	margin:2px;
+}
+.buton2 {	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+	cursor:pointer;
+	border:1px solid #CCCCCC;
+	margin:2px;
+}
+.bilgiTable1 {	-moz-border-radius:16px;
+	-webkit-border-radius:16px;
+	border-radius:16px;
+	background-color:#666666;
+}
+.buton3 {	-moz-box-shadow:inset 0px 1px 0px 0px #a6a6a6;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #a6a6a6;
+	box-shadow:inset 0px 1px 0px 0px #a6a6a6;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #bababa), color-stop(1, #9e9e9e) );
+	background:-moz-linear-gradient( center top, #bababa 5%, #9e9e9e 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bababa', endColorstr='#9e9e9e');
+	background-color:#bababa;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #adadad;
+	display:inline-block;
+	color:#fafafa;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #808080;
+	border:1px solid #CCCCCC;
+	margin:2px;
+	cursor:pointer;
+}
+.buton31 {
+	-moz-box-shadow:inset 0px 1px 0px 0px #a6a6a6;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #a6a6a6;
+	box-shadow:inset 0px 1px 0px 0px #a6a6a6;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #bababa), color-stop(1, #9e9e9e) );
+	background:-moz-linear-gradient( center top, #bababa 5%, #9e9e9e 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bababa', endColorstr='#9e9e9e');
+	background-color:#bababa;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #adadad;
+	display:inline-block;
+	color:#fafafa;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #808080;
+	border:1px solid #CCCCCC;
+	margin:2px;
+	cursor:pointer;
+}
+
+#keyboardInfo {
+	display:none;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -350px;
+    width: 700px;
+    height: 500px;
+}
