@@ -23,6 +23,8 @@ body{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	font-style: italic;
+	color: #CCC;
 }
 #icerik {
 	width:1020px;
