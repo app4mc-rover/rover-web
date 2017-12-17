@@ -31,7 +31,7 @@ ROVERWEB_HOST = '127.0.0.1';
 ROVERWEB_LISTEN_PORT = 8502;
 ROVERWEB_SEND_PORT = 8501;
 HTTP_PORT = 5500;
-SOCKETIO_PORT = 5502;
+SOCKETIO_PORT = 5500;
 
 // Start HTTP Server to serve the web-page
 let ret = roverweb_http_server.run(HTTP_PORT);
@@ -44,4 +44,4 @@ let ret3 = roverweb_tcp_client.run(ROVERWEB_HOST, ROVERWEB_SEND_PORT);
 
 // Start Socket.Io Server for data passing: TCP >> socketIO >> Our Webpage (HTTP)
 //											TCP << socketIO << Our Webpage (HTTP)
-let ret4 = roverweb_socketio_server.run(SOCKETIO_PORT);
+let ret4 = roverweb_socketio_server.run();

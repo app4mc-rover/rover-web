@@ -22,19 +22,31 @@
 
 module.exports = {
    run: function(port_) {
+	   	// Socket.io interface
+		var io_interface = require('./interfaces/if_io'); 
+	  
 		// Variables
 		var HTTP_SERVER_PORT = port_;
 		
 		// Modules
-		var connect = require('connect');
-		var http = require ('http');
-		var serveStatic = require('serve-static');
+		// Setup basic express server
+		var express = require('express');
+		var app = express();
+		var path = require('path');
+		var server = require('http').createServer(app);
+		io_interface.if_io.io = require('socket.io')(server);
+		var port = process.env.PORT || port_;
 		
 		// ----
 		
-		// Start server-static based HTTP server
-		var http_server = connect().use(serveStatic("../../")).listen(HTTP_SERVER_PORT, function(){
-			console.log('rover-web HTTP server: is now running on '+HTTP_SERVER_PORT+'...');
+		// Routing
+		app.use(express.static(path.join(__dirname, '/public')));
+		
+		// Start HTTP server
+		server.listen(port, function () {
+			console.log('Server listening at port %d', port);
 		});
+		
+		
    }
 }

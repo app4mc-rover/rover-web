@@ -22,31 +22,19 @@
 //		TCP_Server >> server_interface >> socketIO (HTTP) >> Serve-static Webpage (HTTP) + socketIO Client
 
 module.exports = {
-   run: function(socketio_port) {
+   run: function() {
+	   	// Socket.io interface
+		var io_interface = require('./interfaces/if_io'); 
 	   
 	   	// Interface between TCP client and SocketIO server to share variables
 		var client_interface = require('./interfaces/if_tcpclient_socketio'); 
 		
 		// Interface between TCP server and SocketIO server to share variables
 		var server_interface = require('./interfaces/if_tcpserver_socketio'); 
+			
+		io_interface.if_io.io.on('connection', function(socket) {
 		
-		// Variables
-		var SOCKETIO_SERVER_PORT = socketio_port;
-		
-		// Modules
-		var io = require('socket.io');
-		var http = require ('http');
-		
-		// Start socket.io HTTP server
-		socketio_server = http.createServer();
-		socketio_server.listen(SOCKETIO_SERVER_PORT);
-		
-		// socket.io event-based communication to pass data between web-page and remote TCP server
-		var io = require('socket.io').listen(socketio_server);
-		console.log ("rover-web Socket.Io server: Attempting to connect to port " +SOCKETIO_SERVER_PORT);	
-		io.sockets.on('connection', function(socket) {
-		
-			console.log ("rover-web Socket.Io server: Successfully connected to port "+SOCKETIO_SERVER_PORT );		
+			console.log ("rover-web Socket.Io server: Successfully connected");		
 			
 			// Send events to SocketIO client, given inputs from shared variable interface
 			// Timer event
