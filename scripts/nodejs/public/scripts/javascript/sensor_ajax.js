@@ -23,9 +23,9 @@ parent.socketIOClient.on('sensor', function(data){
 	function redrawSensorDisplay(infrared0, infrared1, infrared2, infrared3, front_sr04, rear_sr04,temperature, humidity, compass )
 	{	
 		// jQuery domain, redraw everything
-		$(document).ready(function (){
-			$('#sensorReading').html("");
-			$('#sensorReading').append("<span style=\"font:'Arial';\"><table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"> \
+		
+			document.getElementById("sensorReading").innerHTML = "";
+			document.getElementById("sensorReading").innerHTML = "<span style=\"font:'Arial';\"><table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"> \
 <tr> \
 <td width=\"10%\"><img src=\"images/icons/infrared.png\" width=\"111\" height=\"28\" /></td> \
 <td width=\"20%\"><span style=\"font-size:18px; color:#FFF;\">Rear-Right: </span><span style=\" font-size:18px; color:#00CCFF;\">"+infrared0+"&nbsp;cm</span><br /> \
@@ -41,8 +41,8 @@ parent.socketIOClient.on('sensor', function(data){
 <td width=\"8%\"><img src=\"images/icons/compass-icon-13564.png\" width=\"88\" height=\"85\" /></td> \
 <td width=\"19%\"><span style=\"font-size:18px; color:#FFF;\">Bearing: </span><span style=\" font-size:18px; color:#00CCFF;\">"+compass+"&nbsp;deg</span><br /></td> \
 </tr> \
-</table></span>");
-		});
+</table></span>";
+		
 		
 	}
 
