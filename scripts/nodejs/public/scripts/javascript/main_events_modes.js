@@ -370,14 +370,3 @@ $(function(){
 
 	$('#sliderSpeed').slider();
 });
-
-$(document).ready(function(){
-	//Get current URL-hostname
-	var my_hostname = $(location).attr('hostname');
-	
-	// Set stream-link using hostname 
-	$('#StreamLink img').attr('src','http://'+my_hostname+':8081/?action=stream'); 
-	
-});
-
-
